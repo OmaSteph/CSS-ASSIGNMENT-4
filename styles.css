@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 1440px;
+    background-color: #f7fdfc;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    padding: 81px 140px 80px;
+}
+
+
+.logo-container {
+    max-width: 460px;
+    margin-top: 124px;
+    margin-bottom: auto;
+}
+
+.logo {
+    max-width: 77.33px;
+    margin-bottom: 50px;
+}
+
+.container-heading {
+    margin-bottom: 20px;
+    font-family: Brown;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+    color: #000B0A;
+}
+
+.logo-container p {
+    font-family: Brown;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #737373;
+}
+
+.form-container {
+    padding: 40px;
+    max-width: 580px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 30px;
+}
+
+label {
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    color: #011C34;
+}
+
+.password {
+    width: 100%;
+}
+
+.dob {
+    width: 100%;
+}
+
+.eye-icon, .calendar-icon {
+    position: relative;
+}
+
+.show, .calendar {
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button {
+    margin-bottom: 16px;
+    width: 100%;
+    font-family: Sofia Pro;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background-color: #2EC4B6;
+}
+
+footer {
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+span {
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #2EC4B6;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+input, select, button {
+    height: 48px;
+}
+
+:placeholder-shown {
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.first-name:placeholder-shown {
+    font-weight: 400;
+    color: #011C34;
+
+}
+
+footer {
+    padding-left: 18px;
+    padding-right: 19px;
+}
+
+/* select option:disabled {
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+} */
+
+@media only screen and (max-width: 375px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-rows: auto auto;
+    }
+}
